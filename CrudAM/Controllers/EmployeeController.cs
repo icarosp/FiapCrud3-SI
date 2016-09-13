@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CrudAM.Models;
 
 namespace CrudAM.Controllers
 {
@@ -15,6 +16,11 @@ namespace CrudAM.Controllers
         }
 
         public ActionResult Create() {
+            return View();
+        }
+
+        public ActionResult Create(Employee emp)
+        {
             return View();
         }
 

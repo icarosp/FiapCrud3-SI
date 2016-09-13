@@ -9,16 +9,21 @@
 @using (Html.BeginForm()) {
     <table>
         <tr>
-            <td>@Html.LabelFor(x => x.)</td>
-            <td></td>
+            <td>@Html.LabelFor(x => x.id)</td>
+            <td>@Html.TextBoxFor(x => x.id)</td>
         </tr>
         <tr>
-            <td>Name</td>
-            <td></td>
+            <td>@Html.LabelFor(x => x.name)</td>
+            <td>@Html.TextBoxFor(x => x.name)</td>
         </tr>
         <tr>
-            <td>Gender</td>
-            <td></td>
+            <td>@Html.LabelFor(x => x.gender)</td>
+            <td>@Html.RadioButtonFor(x => x.gender,"M") Male || @Html.RadioButtonFor(x => x.gender, "F") Female </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:right"><input type="submit" value="Create"/></td>
         </tr>
     </table>
+    <br />
+    @Html.ActionLink("Back to index", "Index");
 }
