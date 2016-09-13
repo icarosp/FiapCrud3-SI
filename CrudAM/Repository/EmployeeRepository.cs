@@ -32,8 +32,19 @@ namespace CrudAM.Repository
             return this.employees;
         }
 
+        public Employee ListEmployees(int id)
+        {
+            return this.employees.Where(x => x.id == id).First();
+        }
+
         public void DeleteEmployee(int id) {
             this.employees.RemoveAll(x => x.id == id);
+        }
+
+        public void EditEmployee(Employee emp)
+        {
+            this.employees.RemoveAll(x => x.id == emp.id);
+            this.employees.Add(emp);
         }
     }
 }

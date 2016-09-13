@@ -27,7 +27,7 @@ namespace CrudAM.Controllers
 
             repo.Create(emp);
 
-            return RedirectToAction("List");//View("Index");
+            return RedirectToAction("List");
         }
 
         public ActionResult List()   
@@ -39,6 +39,20 @@ namespace CrudAM.Controllers
         public ActionResult Delete(int id) {
             EmployeeRepository repo = EmployeeRepository.Instance();
             repo.DeleteEmployee(id);
+            return RedirectToAction("List");
+        }
+
+        public ActionResult Edit(int id) {
+            EmployeeRepository repo = EmployeeRepository.Instance();
+            Employee emp = repo.ListEmployees(id);
+            return View("Create", emp);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Employee emp)
+        {
+            EmployeeRepository repo = EmployeeRepository.Instance();
+            repo.EditEmployee(emp);
             return RedirectToAction("List");
         }
     }
