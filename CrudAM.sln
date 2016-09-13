@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAM", "CrudAM\CrudAM.csproj", "{D6FBEF3B-C5BE-49A1-ACA0-FD7C0245BF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAM.Tests", "CrudAM.Tests\CrudAM.Tests.csproj", "{DC7EEF70-FD34-4BE7-AA5E-5F1571917D37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6FBEF3B-C5BE-49A1-ACA0-FD7C0245BF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FBEF3B-C5BE-49A1-ACA0-FD7C0245BF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FBEF3B-C5BE-49A1-ACA0-FD7C0245BF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FBEF3B-C5BE-49A1-ACA0-FD7C0245BF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7EEF70-FD34-4BE7-AA5E-5F1571917D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7EEF70-FD34-4BE7-AA5E-5F1571917D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7EEF70-FD34-4BE7-AA5E-5F1571917D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7EEF70-FD34-4BE7-AA5E-5F1571917D37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
