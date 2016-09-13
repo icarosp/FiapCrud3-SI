@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CrudAM.Models.Employee>
+
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<table style="width:50%">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.id)</th>
+        <th>@Html.DisplayNameFor(m => m.name)</th>
+        <th>@Html.DisplayNameFor(m => m.gender)</th>
+        <th></th>
+    </tr>
+    @foreach (var emp in Model) {
+        <tr>
+            <td>@Html.DisplayFor(m => emp.id)</td>
+            <td>@Html.DisplayFor(m => emp.name)</td>
+            <td>@Html.DisplayFor(m => emp.gender)</td>
+            <td>@Html.ActionLink("Edit","Edit", new { id = emp.id}) || @Html.ActionLink("Delete", "Delete", new { id = emp.id })</td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Back to index","Index")
+
