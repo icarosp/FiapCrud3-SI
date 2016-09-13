@@ -19,6 +19,7 @@ namespace CrudAM.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Create(Employee emp)
         {
             return View();
